@@ -1,0 +1,75 @@
+<style>
+  label[for="transcript-toggle"] {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+}
+  
+  .row {
+    border: 20px solid red;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .row2 {
+    border: 20px solid red;
+    margin: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+
+  .page>div {
+    border: 1px solid;
+    margin: 100px;
+
+  }
+  #transcript {
+  display: none;
+}
+
+#transcript-toggle:checked ~ #transcript {
+  display: block;
+}
+
+
+
+</style>
+
+
+
+<body>
+  <div class="page">
+    <div class="row">
+      <div>
+        <img width="100%" src="auditorioPano.jpeg" alt="description of image">
+      </div>
+      <div>
+        <img width="100%" src="auditorioPano.jpeg" alt="description of image">
+      </div>
+      <div>
+        <img width="100%" src="auditorioPano.jpeg" alt="description of image">
+      </div>
+    </div>
+    <div class="row2">
+      <div>4</div>
+    </div>
+    <div class="row2">
+      <div>
+        <img width="100%" src="auditorioPano.jpeg" alt="description of image"></div>
+      <div>
+        <img width="100%" src="auditorioPano.jpeg" alt="description of image">
+      </div>
+    </div>
+  </div>
+<input type="checkbox" id="transcript-toggle" />
+<label for="transcript-toggle">Show Transcript</label>
+<section id="transcript">
+  <p>This is the transcript of the comic.</p>
+</section>
+</body>
